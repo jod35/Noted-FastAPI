@@ -2,8 +2,9 @@ from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 
 
-
+#schema for returning a note
 class NoteModel(BaseModel):
+
     id : str
     title :str
     content: str
@@ -14,7 +15,7 @@ class NoteModel(BaseModel):
     )
 
 
-
+#schema for creating a note
 class NoteCreateModel(BaseModel):
     title :str
     content: str

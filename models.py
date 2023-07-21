@@ -12,7 +12,7 @@ class Note:
 
 """
 
-
+#the database model for notes
 class Note(Base):
     __tablename__ = "notes"
     id: Mapped[str] = mapped_column(primary_key=True)
